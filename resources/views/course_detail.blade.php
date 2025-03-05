@@ -662,7 +662,7 @@
                                             <li><a href="checkout.html">Checkout</a></li>
                                             <li><a href="wishlist.html">Wishlist Page</a></li>
                                             <li><a href="my-account.html">My Acount</a></li>
-                                            <li><a href="login.html">Login & Register</a></li>
+                                            <li><a href="login.html">Login</a></li>
                                             <li><a href="subscription.html">Subscription</a></li>
                                         </ul>
                                     </div>

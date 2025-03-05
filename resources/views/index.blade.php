@@ -145,7 +145,8 @@
                                 <a class="rbt-cat-box rbt-cat-box-1 text-center" href="#">
                                     <div class="inner">
                                         <div class="icons">
-                                            <img src="{{ $category->icon }}" alt="Icons Images">
+                                            {{-- <img src="{{ $category->icon }}" alt="Icons Images"> --}}
+                                            <img src="images/smartphone-1818253_1280-removebghd.png" alt="Icons Images">
                                         </div>
                                         <div class="content">
                                             <h5 class="title">{{ $category->name }}</h5>

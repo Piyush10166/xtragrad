@@ -7,7 +7,7 @@
                             <div class="footer-widget">
                                 <div class="logo logo-dark">
                                     <a href="index.html">
-                                        <img src="images/logo-black.png" alt="Edu-cause">
+                                        <img src="images/xtragrad-logo.png" alt="Edu-cause">
                                     </a>
                                 </div>
                                 <div class="logo d-none logo-light">
@@ -34,7 +34,7 @@
 
                         <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6 col-12 mt--30">
                             <div class="footer-widget">
-                                <h5 class="ft-title">Useful Links</h5>
+                                <h5 class="ft-title">Courses</h5>
                                 <ul class="ft-link">
                                     <li>
                                         <a href="12-marketplace.html">Marketplace</a>
@@ -82,9 +82,9 @@
                             <div class="footer-widget">
                                 <h5 class="ft-title">Get Contact</h5>
                                 <ul class="ft-link">
-                                    <li><span>Phone:</span> <a href="#">(406) 555-0120</a></li>
-                                    <li><span>E-mail:</span> <a href="mailto:hr@example.com">rainbow@example.com</a></li>
-                                    <li><span>Location:</span> North America, USA</li>
+                                    <li><span>Phone:</span> <a href="#">93478 39951</a></li>
+                                    <li><span>E-mail:</span> <a href="mailto:support@xtragrad.in ">support@xtragrad.in</a></li>
+                                    <li><span>Location:</span> plot 51, jayabheri enclave, Gachibowli, Hyderabad - 500081</li>
                                 </ul>
                                 <ul class="social-icon social-default justify-content-start mt--20">
                                     <li><a href="https://www.facebook.com/">
@@ -119,14 +119,14 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
-                            <p class="rbt-link-hover text-center text-lg-start">Copyright © 2025 <a href="https://rainbowthemes.net">Rainbow-Themes.</a> All Rights Reserved</p>
+                            <p class="rbt-link-hover text-center text-lg-start">Copyright © 2025 <a href="https://foxgeek.in/">FoxGeek Technologies Pvt Ltd</a> All Rights Reserved</p>
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
                             <ul class="copyright-link rbt-link-hover justify-content-center justify-content-lg-end mt_sm--10 mt_md--10">
                                 <li><a href="#">Terms of service</a></li>
                                 <li><a href="privacy-policy.html">Privacy policy</a></li>
                                 <li><a href="subscription.html">Subscription</a></li>
-                                <li><a href="login.html">Login & Register</a></li>
+                                <li><a href="login.html">Login</a></li>
                             </ul>
                         </div>
                     </div>
