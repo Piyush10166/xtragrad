@@ -5,12 +5,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CourseController;
 
+use App\Models\Course;
+use App\Models\Category;
+
 Route::get('/laravel', function () {
     return view('welcome');
 });
 
 Route::get('/', function () {
-    return view('index');
+    $categories = Category::with('courses')->withCount('courses')->get();
+        return view('index', compact('categories'));
 });
 
 Route::get('/contact', function () {
@@ -21,7 +25,6 @@ Route::get('/course-detail', function () {
     return view('course_detail');
 });
 
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -31,6 +34,8 @@ Route::get('/course/create', [CourseController::class, 'create'])->name('course.
 
 Route::resource('category', CategoryController::class);
 Route::resource('course', CourseController::class);
+
+Route::get('/course/{id}', [CourseController::class, 'show'])->name('course.details');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

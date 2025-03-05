@@ -12,4 +12,9 @@ class Course extends Model
     protected $fillable = [
         'name', 'short_description', 'long_description', 'price', 'selling_price', 'images', 'file', 'start_date', 'skill_level', 'category_id'
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
