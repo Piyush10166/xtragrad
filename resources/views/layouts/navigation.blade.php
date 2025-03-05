@@ -7,7 +7,6 @@
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
                         <img src="images/xtragrad-logo.png" alt="Education Logo Images" class=" h-9 fill-current text-gray-500">
-
                     </a>
                 </div>
 
@@ -15,6 +14,12 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('category.create')" :active="request()->routeIs('category.create')">
+                        {{ __('Add Category') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('course.create')" :active="request()->routeIs('course.create')">
+                        {{ __('Add Course') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -67,9 +72,16 @@
 
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
+        
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('category.create')" :active="request()->routeIs('category.create')">
+                {{ __('Add Category') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('course.create')" :active="request()->routeIs('course.create')">
+                {{ __('Add Course') }}
             </x-responsive-nav-link>
         </div>
 
