@@ -6,8 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <img src="images/xtragrad-logo.png" alt="Education Logo Images" class=" h-9 fill-current text-gray-500">
-                    </a>
+                        <img src="{{ asset('images/xtragrad-logo.png') }}" alt="Education Logo Images" class="h-9 fill-current text-gray-500">                    </a>
                 </div>
 
                 <!-- Navigation Links -->
