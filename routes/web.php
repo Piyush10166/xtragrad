@@ -17,13 +17,19 @@ Route::get('/', function () {
         return view('index', compact('categories'));
 });
 
+Route::get('/course-detail/{id}', function ($id) {
+    $course = Course::findOrFail($id);
+    return view('course_details', compact('course'));
+})->name('course.details');
+
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
 Route::get('/course-detail', function () {
     return view('course_detail');
-});
+})->name('course.detail');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
