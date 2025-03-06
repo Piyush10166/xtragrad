@@ -5,7 +5,7 @@
             <div class="col-lg-12">
                 <div class="section-title text-center mb--60">
                     <span class="subtitle bg-secondary-opacity">Contact Us</span>
-                    <h2 class="title">Histudy Course Contact <br> can join with us.</h2>
+                    <h2 class="title">Xtragrad Course Contact <br> can join with us.</h2>
                 </div>
             </div>
         </div>
@@ -17,8 +17,8 @@
                     </div>
                     <div class="inner">
                         <h4 class="title">Contact Phone Number</h4>
-                        <p><a href="tel:+444555666777">+444 555 666 777</a></p>
-                        <p><a href="tel:+222222222333">+222 222 222 333</a></p>
+                        <p><a href="tel:93478 39951">93478 39951</a></p>
+                        {{-- <p><a href="tel:+222222222333">+222 222 222 333</a></p> --}}
                     </div>
                 </div>
             </div>
@@ -29,8 +29,8 @@
                     </div>
                     <div class="inner">
                         <h4 class="title">Our Email Address</h4>
-                        <p><a href="mailto:admin@gmail.com">admin@gmail.com</a></p>
-                        <p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
+                        <p><a href="mailto:support@xtragrad.in ">support@xtragrad.in </a></p>
+                        {{-- <p><a href="mailto:example@gmail.com">example@gmail.com</a></p> --}}
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="inner">
                         <h4 class="title">Our Location</h4>
-                        <p>5678 Bangla Main Road, cities 580 <br> GBnagla, example 54786</p>
+                        <p>plot 51, jayabheri enclave, Gachibowli,  <br> Hyderabad - 500081</p>
                     </div>
                 </div>
             </div>

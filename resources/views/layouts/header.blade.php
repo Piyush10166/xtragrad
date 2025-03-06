@@ -54,7 +54,7 @@
                 <div class="mainbar-row rbt-navigation-center align-items-center">
                     <div class="header-left">
                         <div class="logo logo-dark">
-                            <a href="index.html">
+                            <a href="{{ url('/') }}">
                                 <img src="images/xtragrad-logo.png" alt="Education Logo Images">
                             </a>
                         </div>
@@ -227,13 +227,13 @@
                 <div class="content">
                     <div class="logo">
                         <div class="logo logo-dark">
-                            <a href="index.html">
+                            <a href="{{ url('/') }}">
                                 <img src="images/xtragrad-logo.png" alt="Education Logo Images">
                             </a>
                         </div>
 
                         <div class="logo d-none logo-light">
-                            <a href="index.html">
+                            <a href="{{ url('/') }}">
                                 <img src="images/xtragrad-logo.png" alt="Education Logo Images">
                             </a>
                         </div>

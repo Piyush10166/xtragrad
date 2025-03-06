@@ -643,7 +643,7 @@
                                         <h3 class="rbt-short-title">Get Started</h3>
                                         <ul class="mega-menu-item">
                                             <li><a href="profile.html">Profile</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
+                                            <li><a href="{{ route('contact') }}">Contact Us</a></li>
                                             <li><a href="become-a-teacher.html">Become a Teacher</a></li>
                                             <li><a href="instructor.html">Instructor</a></li>
                                             <li><a href="faqs.html">FAQS</a></li>

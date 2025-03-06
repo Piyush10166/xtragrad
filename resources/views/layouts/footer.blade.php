@@ -21,7 +21,7 @@
                                 </p>
 
                                 <div class="contact-btn mt--30">
-                                    <a class="rbt-btn hover-icon-reverse btn-border-gradient radius-round" href="#">
+                                    <a class="rbt-btn hover-icon-reverse btn-border-gradient radius-round" href="{{ route('contact') }}">
                                         <div class="icon-reverse-wrapper">
                                             <span class="btn-text">Contact With Us</span>
                                             <span class="btn-icon"><i class="feather-arrow-right"></i></span>
@@ -34,24 +34,14 @@
 
                         <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6 col-12 mt--30">
                             <div class="footer-widget">
-                                <h5 class="ft-title">Courses</h5>
-                                <ul class="ft-link">
-                                    <li>
-                                        <a href="12-marketplace.html">Marketplace</a>
-                                    </li>
-                                    <li>
-                                        <a href="04-kindergarten.html">kindergarten</a>
-                                    </li>
-                                    <li>
-                                        <a href="13-university-classic.html">University</a>
-                                    </li>
-                                    <li>
-                                        <a href="09-gym-coaching.html">GYM Coaching</a>
-                                    </li>
-                                    <li>
-                                        <a href="faqs.html">FAQ</a>
-                                    </li>
-                                </ul>
+                                <h5 class="ft-title">Course categories</h5>
+                                {{-- <ul class="ft-link">
+                                    @foreach($categories as $category)
+                                        <li>
+                                            <a href="#">{{ $category->name }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul> --}}
                             </div>
                         </div>
 
@@ -59,21 +49,16 @@
                             <div class="footer-widget">
                                 <h5 class="ft-title">Our Company</h5>
                                 <ul class="ft-link">
-                                    <li>
-                                        <a href="contact.html">Contact Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="become-a-teacher.html">Become Teacher</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html">Blog</a>
-                                    </li>
-                                    <li>
+                                    <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                                    <li><a href="#">Terms of service</a></li>
+                                    <li><a href="privacy-policy.html">Privacy policy</a></li>
+                                    <li><a href="blog.html">About Us</a></li>
+                                    {{-- <li>
                                         <a href="instructor.html">Instructor</a>
                                     </li>
                                     <li>
                                         <a href="event-list.html">Events</a>
-                                    </li>
+                                    </li> --}}
                                 </ul>
                             </div>
                         </div>
@@ -123,9 +108,9 @@
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
                             <ul class="copyright-link rbt-link-hover justify-content-center justify-content-lg-end mt_sm--10 mt_md--10">
-                                <li><a href="#">Terms of service</a></li>
-                                <li><a href="privacy-policy.html">Privacy policy</a></li>
-                                <li><a href="subscription.html">Subscription</a></li>
+                                {{-- <li><a href="#">Terms of service</a></li> --}}
+                                {{-- <li><a href="privacy-policy.html">Privacy policy</a></li> --}}
+                                {{-- <li><a href="subscription.html">Subscription</a></li> --}}
                                 <li><a href="login.html">Login</a></li>
                             </ul>
                         </div>
