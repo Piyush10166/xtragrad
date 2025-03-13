@@ -17,10 +17,10 @@ Route::get('/', function () {
         return view('index', compact('categories'));
 });
 
-Route::get('/course-detail/{id}', function ($id) {
-    $course = Course::findOrFail($id);
-    return view('course_details', compact('course'));
-})->name('course.details');
+// Route::get('/course-detail/{id}', function ($id) {
+//     $course = Course::findOrFail($id);
+//     return view('course_details', compact('course'));
+// })->name('course.details');
 
 Route::get('/contact', function () {
     return view('contact');
@@ -41,12 +41,17 @@ Route::get('/course/create', [CourseController::class, 'create'])->name('course.
 Route::resource('category', CategoryController::class);
 Route::resource('course', CourseController::class);
 
-Route::get('/course/{id}', [CourseController::class, 'show'])->name('course.details');
+Route::get('/{id}', [CourseController::class, 'show'])->name('course.details');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('/all-courses', function () {
+    return view('all_courses');
+});
+
 
 require __DIR__.'/auth.php';

@@ -210,59 +210,6 @@
                 </div>
             </div>
 
-            {{-- <div class="row">
-                <div class="col-lg-12">
-                    <div class="tab-content" id="rbt-myTabContent">
-                        @foreach($categories as $category)
-                            <div class="tab-pane fade {{ $loop->first ? 'active show' : '' }}" id="category-{{ $category->id }}" role="tabpanel" aria-labelledby="category-{{ $category->id }}-tab">
-                                <div class="row g-5">
-                                    @foreach($category->courses as $course)
-                                        @php
-                                            $images = json_decode($course->images, true);
-                                            $firstImage = $images[0] ?? 'image.png';
-                                        @endphp
-                                        <!-- Start Single Course  -->
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="rbt-card variation-04 rbt-hover">
-                                                <div class="rbt-card-img">
-                                                    <a href="{{ route('course.details', $course->id) }}">
-                                                        <img src="{{ asset('storage/' . $firstImage) }}" alt="Card image">
-                                                    </a>
-                                                </div>
-                                                <div class="rbt-card-body">
-                                                    <ul class="rbt-meta">
-                                                        <li><i class="feather-book"></i>{{ $course->lessons_count }} Lessons</li>
-                                                        <li><i class="feather-users"></i>{{ $course->students_count }} Students</li>
-                                                    </ul>
-                                                    <h4 class="rbt-card-title"><a href="{{ route('course.details', $course->id) }}">{{ $course->name }}</a></h4>
-                                                    <p class="rbt-card-text">{{ $course->short_description }}</p>
-                                                    <div class="rbt-review">
-                                                        <div class="rating">
-                                                            @for($i = 0; $i < 5; $i++)
-                                                                <i class="fas fa-star"></i>
-                                                            @endfor
-                                                        </div>
-                                                    </div>
-                                                    <div class="rbt-card-bottom">
-                                                        <div class="rbt-price">
-                                                            <h6 class="current-price mb-0">${{ $course->price }}</h6>
-                                                            @if($course->original_price)
-                                                                <span class="off-price version-02">${{ $course->original_price }}</span>
-                                                            @endif
-                                                        </div>
-                                                        <a class="rbt-btn-link color-primary" href="{{ route('course.details', $course->id) }}">Enroll Course<i class="feather-arrow-right"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Course  -->
-                                    @endforeach
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-            </div> --}}
             <div class="row">
                 <div class="col-lg-12">
                     <div class="tab-content" id="rbt-myTabContent">
@@ -276,7 +223,8 @@
                                         @endphp
                                         <!-- Start Single Course  -->
                                         <div class="col-lg-4 col-md-6 col-12">
-                                            <a href="{{ route('course.detail') }}" class="rbt-card-link">
+                                            {{-- <a href="{{ route('course.detail') }}" class="rbt-card-link"> --}}
+                                                <a href="{{ route('course.details', ['id' => $course->id]) }}" class="rbt-card-link">
                                                 <div class="rbt-card variation-04 rbt-hover">
                                                     <div class="rbt-card-img">
                                                         <img src="{{ asset('storage/' . $firstImage) }}" alt="Card image">

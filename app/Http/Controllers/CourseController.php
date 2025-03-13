@@ -14,6 +14,12 @@ class CourseController extends Controller
         return view('course.index', compact('courses'));
     }
 
+    public function show($id)
+    {
+        $course = Course::findOrFail($id);
+        return view('course_detail', compact('course'));
+    }
+
     public function create()
     {
         $categories = Category::paginate(10);

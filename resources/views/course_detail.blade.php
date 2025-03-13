@@ -1004,10 +1004,10 @@
                             </li>
                             <li class="rbt-breadcrumb-item active">Web Development</li>
                         </ul>
-                        <h2 class="title">The Complete Histudy 2024: From Zero to Expert!</h2>
-                        <p class="description">Master Python by building 100 projects in 100 days. Learn data
-                            science, automation, build websites, games and apps!</p>
-
+                        <h2 class="title">{{ $course->name }}</h2>
+                        {{-- <p class="description">Master Python by building 100 projects in 100 days. Learn data
+                            science, automation, build websites, games and apps!</p> --}}
+                            <p class="description">{{ $course->short_description }}</p>
                         <div class="d-flex align-items-center mb--20 flex-wrap rbt-course-details-feature">
 
                             <div class="feature-sin best-seller-badge">
@@ -1066,8 +1066,8 @@
                 <div class="col-lg-8">
                     <div class="course-details-content">
                         <div class="rbt-course-feature-box rbt-shadow-box thuumbnail">
-                            <img class="w-100" src="images/course-01.jpg" alt="Card image">
-                        </div>
+                            <img class="w-100" src="{{ asset('storage/' . json_decode($course->images)[0]) }}" alt="Course Image">
+                        </div>                        
 
                         <div class="rbt-inner-onepage-navigation sticky-top mt--30">
                             <nav class="mainmenu-nav onepagenav">
@@ -1097,11 +1097,7 @@
                                 <div class="section-title">
                                     <h4 class="rbt-title-style-3">What you'll learn</h4>
                                 </div>
-                                <p>Are you new to PHP or need a refresher? Then this course will help you get
-                                    all the fundamentals of Procedural PHP, Object Oriented PHP, MYSQLi and
-                                    ending the course by building a CMS system similar to WordPress, Joomla or
-                                    Drupal. Knowing PHP has allowed me to make enough money to stay home and
-                                    make courses like this one for students all over the world. </p>
+                                <p>{{ $course->long_description }}</p>
 
                                 <div class="row g-5 mb--30">
                                     <!-- Start Feture Box  -->
@@ -2026,8 +2022,8 @@
                                         </div>
                                         <div class="rbt-card-bottom">
                                             <div class="rbt-price">
-                                                <span class="current-price">$60</span>
-                                                <span class="off-price">$120</span>
+                                                <span class="current-price">₹60</span>
+                                                <span class="off-price">₹120</span>
                                             </div>
                                             <a class="rbt-btn-link" href="course-details.html">Learn
                                                 More<i class="feather-arrow-right"></i></a>
@@ -2083,8 +2079,8 @@
                                         </div>
                                         <div class="rbt-card-bottom">
                                             <div class="rbt-price">
-                                                <span class="current-price">$60</span>
-                                                <span class="off-price">$120</span>
+                                                <span class="current-price">₹60</span>
+                                                <span class="off-price">₹120</span>
                                             </div>
                                             <a class="rbt-btn-link left-icon" href="course-details.html"><i class="feather-shopping-cart"></i> Add To Cart</a>
                                         </div>
@@ -2118,8 +2114,8 @@
                             <div class="content-item-content">
                                 <div class="rbt-price-wrapper d-flex flex-wrap align-items-center justify-content-between">
                                     <div class="rbt-price">
-                                        <span class="current-price">$60.99</span>
-                                        <span class="off-price">$84.99</span>
+                                        <span class="current-price">₹{{ $course->selling_price }}</span>
+                                        <span class="off-price">₹{{ $course->price }}</span>
                                     </div>
                                     <div class="discount-time">
                                         <span class="rbt-badge color-danger bg-color-danger-opacity"><i class="feather-clock"></i> 3 days left!</span>
@@ -2153,7 +2149,8 @@
                                         </li>
                                         <li><span>Lectures</span><span class="rbt-feature-value rbt-badge-5">50</span>
                                         </li>
-                                        <li><span>Skill Level</span><span class="rbt-feature-value rbt-badge-5">Basic</span></li>
+                                        {{-- <li><span>Skill Level</span><span class="rbt-feature-value rbt-badge-5">Basic</span></li> --}}
+                                        <li><span>Skill Level</span><span class="rbt-feature-value rbt-badge-5">{{ $course->skill_level }}</span></li>
                                         <li><span>Language</span><span class="rbt-feature-value rbt-badge-5">English</span></li>
                                         <li><span>Quizzes</span><span class="rbt-feature-value rbt-badge-5">10</span>
                                         </li>
@@ -2187,8 +2184,7 @@
                                     <hr class="mt--20">
                                     <div class="contact-with-us text-center">
                                         <p>For details about the course</p>
-                                        <p class="rbt-badge-2 mt--10 justify-content-center w-100"><i class="feather-phone mr--5"></i> Call Us: <a href="#"><strong>+444 555
-                                                    666 777</strong></a></p>
+                                        <p class="rbt-badge-2 mt--10 justify-content-center w-100"><i class="feather-phone mr--5"></i> Call Us: <a href="#"><strong>93478 39951</strong></a></p>
                                     </div>
                                 </div>
                             </div>
@@ -2262,8 +2258,8 @@
                             </div>
                             <div class="rbt-card-bottom">
                                 <div class="rbt-price">
-                                    <span class="current-price">$80</span>
-                                    <span class="off-price">$100</span>
+                                    <span class="current-price">₹80</span>
+                                    <span class="off-price">₹100</span>
                                 </div>
                                 <a class="rbt-btn-link" href="course-details.html">Learn
                                     More<i class="feather-arrow-right"></i></a>
@@ -2323,8 +2319,8 @@
 
                             <div class="rbt-card-bottom">
                                 <div class="rbt-price">
-                                    <span class="current-price">$60</span>
-                                    <span class="off-price">$120</span>
+                                    <span class="current-price">₹60</span>
+                                    <span class="off-price">₹120</span>
                                 </div>
                                 <a class="rbt-btn-link" href="course-details.html">Learn
                                     More<i class="feather-arrow-right"></i></a>
@@ -2383,8 +2379,8 @@
                             </div>
                             <div class="rbt-card-bottom">
                                 <div class="rbt-price">
-                                    <span class="current-price">$60</span>
-                                    <span class="off-price">$120</span>
+                                    <span class="current-price">₹60</span>
+                                    <span class="off-price">₹120</span>
                                 </div>
                                 <a class="rbt-btn-link left-icon" href="course-details.html"><i class="feather-shopping-cart"></i> Add To Cart</a>
                             </div>
@@ -2403,14 +2399,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
                     <div class="section-title text-center text-md-start">
-                        <h5 class="title mb--0">The Complete Histudy 2024: From Zero to Expert!</h5>
+                        <h5 class="title mb--0">The Complete Xtragrad 2024: From Zero to Expert!</h5>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mt_sm--15">
                     <div class="course-action-bottom-right rbt-single-group">
                         <div class="rbt-single-list rbt-price large-size justify-content-center">
-                            <span class="current-price color-primary">$750.00</span>
-                            <span class="off-price">$1500.00</span>
+                            <span class="current-price color-primary">₹7500.00</span>
+                            <span class="off-price">₹15000.00</span>
                         </div>
                         <div class="rbt-single-list action-btn">
                             <a class="rbt-btn btn-gradient hover-icon-reverse btn-md" href="#">
